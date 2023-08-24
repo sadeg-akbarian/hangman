@@ -1,0 +1,32 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+:root {
+}
+
+@media screen and (max-with: 890px) {
+  html {
+    font-size: 10vmin;
+  }
+}
+
+@media screen and (max-with: 2000px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+html {
+  font-family: "VT323", monospace;
+  direction: ltr;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: var(--page-background-color);
+  color: var(--page-text-color);
+}
