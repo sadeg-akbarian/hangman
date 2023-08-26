@@ -19,9 +19,69 @@
     <title>Hangman</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <form>
+        <div class="statusRow">
+          <div class="topRows status" id="status">
+            <p class="paragraphTop paragraphActive" id="paragraphActive">
+              ACTIVE
+            </p>
+          </div>
+          <div class="topRows theFails" id="theFails">
+            <p class="paragraphTop paragraphFail" id="paragraphFail">
+              FAILS: <span id="failedNumbers">0</span>/10
+            </p>
+          </div>
+          <div class="topRows restart" id="restart">
+            <button
+              type="button"
+              class="paragraphTop buttonRestart"
+              id="buttonRestart"
+            >
+              NEW GAME
+            </button>
+          </div>
+        </div>
+        <div class="wordRow">
+          <div class="wordContainer" id="wordContainer">
+            <p class="theWord" id="theWord"></p>
+          </div>
+        </div>
+        <div class="letterRow">
+          <div class="upperLetterRow">
+            <button type="button" class="singleLetters" id="aLetter">a</button>
+            <button type="button" class="singleLetters" id="bLetter">b</button>
+            <button type="button" class="singleLetters" id="cLetter">c</button>
+            <button type="button" class="singleLetters" id="dLetter">d</button>
+            <button type="button" class="singleLetters" id="eLetter">e</button>
+            <button type="button" class="singleLetters" id="fLetter">f</button>
+            <button type="button" class="singleLetters" id="gLetter">g</button>
+            <button type="button" class="singleLetters" id="hLetter">h</button>
+            <button type="button" class="singleLetters" id="iLetter">i</button>
+            <button type="button" class="singleLetters" id="jLetter">j</button>
+            <button type="button" class="singleLetters" id="kLetter">k</button>
+            <button type="button" class="singleLetters" id="lLetter">l</button>
+            <button type="button" class="singleLetters" id="mLetter">m</button>
+          </div>
+          <div class="betweenLetterRow"></div>
+          <div class="lowerLetterRow">
+            <button type="button" class="singleLetters" id="nLetter">n</button>
+            <button type="button" class="singleLetters" id="oLetter">o</button>
+            <button type="button" class="singleLetters" id="pLetter">p</button>
+            <button type="button" class="singleLetters" id="qLetter">q</button>
+            <button type="button" class="singleLetters" id="rLetter">r</button>
+            <button type="button" class="singleLetters" id="sLetter">s</button>
+            <button type="button" class="singleLetters" id="tLetter">t</button>
+            <button type="button" class="singleLetters" id="uLetter">u</button>
+            <button type="button" class="singleLetters" id="vLetter">v</button>
+            <button type="button" class="singleLetters" id="wLetter">w</button>
+            <button type="button" class="singleLetters" id="xLetter">x</button>
+            <button type="button" class="singleLetters" id="yLetter">y</button>
+            <button type="button" class="singleLetters" id="zLetter">z</button>
+          </div>
+        </div>
+      </form>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>

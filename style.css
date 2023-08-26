@@ -5,28 +5,148 @@
 }
 
 :root {
-}
-
-@media screen and (max-with: 890px) {
-  html {
-    font-size: 10vmin;
-  }
-}
-
-@media screen and (max-with: 2000px) {
-  html {
-    font-size: 20px;
-  }
+  --page-background-color: black;
+  --main-background-color: white;
+  --hover-color: rgba(128, 128, 128, 0.4);
+  --clicked-color: rgb(128, 128, 128);
 }
 
 html {
   font-family: "VT323", monospace;
   direction: ltr;
+  font-size: 2.2vmin;
 }
 
 body {
   margin: 0;
   height: 100vh;
   background-color: var(--page-background-color);
-  color: var(--page-text-color);
+  /* color: var(--page-text-color); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: var(--main-background-color);
+  width: 44rem;
+  height: 28rem;
+  padding: 1rem;
+}
+
+form {
+  height: 100%;
+}
+
+/* ............................................................................ statusRow styles ................ */
+
+.statusRow {
+  height: 20%;
+  display: flex;
+  align-items: end;
+  border-bottom: 0.1rem solid black;
+}
+
+.topRows {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.status {
+  width: 30%;
+  border-right: 0.1rem solid black;
+}
+
+.paragraphActive {
+  opacity: 1;
+  transition: opacity 200ms linear;
+}
+
+.theFails {
+  width: 40%;
+  background-color: rgba(255, 0, 0, 0);
+}
+
+.restart {
+  width: 30%;
+  border-left: 0.1rem solid black;
+}
+
+.restart:hover {
+  background-color: var(--hover-color);
+}
+
+.paragraphTop {
+  font-size: 2.25rem;
+}
+
+.buttonRestart {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+/*.................................................................................... wordRow styles ...........*/
+
+.wordRow {
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wordContainer {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.theWord {
+  font-size: 2rem;
+  margin-block: 0;
+  letter-spacing: 0.3rem;
+}
+
+/* ................................................................................ letterRow styles .............. */
+
+.letterRow {
+  height: 20%;
+}
+
+.betweenLetterRow {
+  height: 1%;
+  width: 100%;
+}
+
+.upperLetterRow,
+.lowerLetterRow {
+  height: 49.5%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.singleLetters {
+  font-size: 2.25rem;
+  padding-inline: 1rem;
+  margin: 0;
+  border: 0.1rem solid black;
+  background-color: transparent;
+}
+
+.singleLetters:hover {
+  background-color: var(--hover-color);
+}
+
+.singleLetters.no-hover-effect:hover {
+  background-color: transparent;
+}
+
+.clickedLetter {
+  color: var(--clicked-color);
+  border: 0.1rem dotted var(--clicked-color);
+}
+
+.clickedLetter:hover {
+  background-color: transparent;
 }
